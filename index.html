@@ -4,12 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Play Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <h1>Welcome</h1>
-  <button>Start Game</button>
+  <button id="start" onclick="start_game()">Start Game</button>
 
-  <div class="game-wrapper">
+  <div id="game-wrapper" style="display: none">
     <h2>Choose Rock, Paper, or Scissors</h2>
     <button id="rock" onclick="user_choice()">Rock</button>
     <button id="paper" onclick="user_choice()">Paper</button>

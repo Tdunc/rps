@@ -4,6 +4,18 @@ var scissor = 2
 var user_input
 var computer_choice
 
+
+function start_game(){
+  var game = document.getElementById("game-wrapper")
+  
+  if (game.style.display === "none") {
+    game.style.display = "block";
+  } else {
+    game.style.display = "none";
+  }
+
+}
+
 function generate_computer_choice(){
   computer_choice = Math.floor(Math.random() * 3)
   console.log(computer_choice)
